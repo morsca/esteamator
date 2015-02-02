@@ -58,7 +58,7 @@ define('report', ['collections', 'estimateHelpers'], function(collections, helpe
     if (!summary) return null;
 
     return helpers.workItemSummaryMetrics(summary).map(function(metric) {
-      return metric.description;
+      return metric.key;
     });
   };
 

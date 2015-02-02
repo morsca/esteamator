@@ -8,3 +8,4 @@ backbone
 standard-app-packages
 bootstrap
 mrt:define
+tap:i18n

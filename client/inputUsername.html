@@ -1,14 +1,13 @@
 <template name="inputUsername">
   <label class="well">
-  	Your Name: 
+  	{{_ "inputusername_your_name"}}: 
   	<input type="text" autofocus>
   </label>
   {{#if usernameIsDuplicate}}
     <div class="alert alert-block alert-error">
-      <p>Oops, there's already a "{{ proposedDupeName }}" in this session
-      <a class="btn willChange" href="#">Enter a different name</a>
-      <a class="btn sameUser" href="#">I'm that "{{ proposedDupeName }}"!</a>
-      </p>
+      <p>{{_ "inputusername_already_used" proposedDupeName }}</p>
+      <a class="btn willChange" href="#">{{_ "inputusername_change"}}</a>
+      <a class="btn sameUser" href="#">{{_ "inputusername_sameuser" proposedDupeName}}</a>
     </div>
   {{/if}}
 </template>

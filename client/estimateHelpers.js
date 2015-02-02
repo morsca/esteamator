@@ -48,18 +48,10 @@ define('estimateHelpers', ['collections'], function(collections) {
 
     // not to be used directly in templates as it requires an argument
     workItemSummaryMetrics: function(summary) {
-      var keys = ['min', 'max', 'spread', 'mean', 'stdDev'],
-          descriptions = {
-            min: 'Lowest',
-            max: 'Highest',
-            spread: 'Spread',
-            mean: 'Mean',
-            stdDev: 'Standard Deviation'
-          };
-
+      var keys = ['min', 'max', 'spread', 'mean', 'stdDev'];
       return keys.map(function(key) {
         return {
-          description: descriptions[key],
+          key: "report_" + key,
           value: summary[key]
         };
       });

@@ -16,7 +16,7 @@ define('estimate', ['collections', 'estimateHelpers'], function(collections, hel
     },
 
     placeholder: function() {
-      return helpers.currentWorkItem().description || 'optional summary of user story';
+      return helpers.currentWorkItem().description || TAPi18n.__('estimate_placeholder');
     }
 
   });

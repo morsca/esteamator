@@ -1,0 +1,30 @@
+{
+	"project_name": "Es<span>team</span>ator",
+	"project_desc1": "Un outil pour aider les équipes agiles distantes à estimer les user stories.", 
+	"project_desc2": "Gratuit. Sans enregistrement. Super simple.",
+	"open_source": "Open Source",
+	"start_estimating": "Commencer à estimer",
+
+	"inputusername_your_name": "Votre nom",
+	"inputusername_already_used": "Oups, %s est déjà présent à cette session.",
+	"inputusername_change": "Entrer un nom différent",
+	"inputusername_sameuser": "Je suis %s !",
+
+	"nav_newsession": "Nouvelle session",
+	"nav_report": "Rapport",
+	"nav_resumeestimating": "Revenir à l'estimation",
+
+	"sharesession_sendemailorcopy": "Envoyer la session par <a href=\"%s\">email</a> ou copier et envoyer l'URL",
+
+	"estimate_placeholder": "description de la user story",
+	"estimate_nextitem" : "Element suivant",
+
+	"userestimate_editname": "éditer le nom",
+
+	"report_description": "Description",
+	"report_min": "Plus bas",
+	"report_max": "Plus haut",
+	"report_spread": "Etendue",
+	"report_mean": "Moyenne",
+	"report_stdDev": "Equart type"
+}

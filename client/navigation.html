@@ -3,12 +3,12 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
     <ul class="nav">
-      <li> <a href="/">New Session</a> </li>
+      <li> <a href="/">{{_ "nav_newsession"}}</a> </li>
       {{#if shouldShowReportLink}}
-        <li> <a href="{{reportHref}}">Report</a> </li>
+        <li> <a href="{{reportHref}}">{{_ "nav_report"}}</a> </li>
       {{/if}}
       {{#if onReportPage}}
-        <li> <a href="{{sessionHref}}">Resume Estimating</a> </li>
+        <li> <a href="{{sessionHref}}">{{_ "nav_resumeestimating"}}</a> </li>
       {{/if}}
     </ul>
     </div>

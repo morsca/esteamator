@@ -20,12 +20,12 @@
       <div class="summary section">
         {{#each currentWorkItemSummaryMetrics}}
           <div class="metric">
-            <div>{{description}}</div>
+            <div>{{_ key}}</div>
             <div>{{value}}</div>
           </div>
         {{/each}}
       </div>
-      <button type="button" class="btn btn-primary nextItem">next item</button>
+      <button type="button" class="btn btn-primary nextItem">{{_ "estimate_nextitem"}}</button>
     {{/if}}
   </div>
 </template>

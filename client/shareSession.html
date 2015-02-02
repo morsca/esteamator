@@ -1,7 +1,6 @@
 <template name="shareSession">
   <div class="well">
-    <a href="{{mailHref}}">Email</a> session to team
-    or copy and send URL<br>
+    {{{_ "sharesession_sendemailorcopy" mailHref}}}<br>
     <input type="text" disabled value="{{url}}"/>
   </div>
 </template>
