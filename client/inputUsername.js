@@ -32,7 +32,8 @@ define('inputUsername', ['collections', 'estimateHelpers'], function(collections
 
     var user = {
   	  sessionId: Session.get('sessionId'),
-  	  name: name 
+  	  name: name,
+      creator: usernames.length === 0
     };
 
     var id = collections.users.insert(user, handleInsertFail);

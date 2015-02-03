@@ -2,11 +2,15 @@
   <div class="estimate">
 
     <div class="well">#{{currentWorkItem.index}}
-      {{#if descriptionIsEditable}}
-        <input type="text" class="description"  placeholder="{{placeholder}}"/>
-      {{else}}
+      {{#if currentUser.creator}}
+        {{#if descriptionIsEditable}}
+          <input type="text" class="description"  placeholder="{{placeholder}}"/>
+        {{else}}        
+          {{currentWorkItem.description}}
+          <a href="#" id="editDescription"><i class="icon-edit"></i></a>
+        {{/if}}
+      {{else}}  
         {{currentWorkItem.description}}
-        <a href="#" id="editDescription"><i class="icon-edit"></i></a>
       {{/if}}
     </div>
 
@@ -25,7 +29,9 @@
           </div>
         {{/each}}
       </div>
-      <button type="button" class="btn btn-primary nextItem">{{_ "estimate_nextitem"}}</button>
+      {{#if currentUser.creator}}
+        <button type="button" class="btn btn-primary nextItem">{{_ "estimate_nextitem"}}</button>
+      {{/if}}
     {{/if}}
   </div>
 </template>
